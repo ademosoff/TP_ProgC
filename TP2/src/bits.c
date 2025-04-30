@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    unsigned int d = 0x10001000; // à adapter si tu veux tester d'autres valeurs
+    unsigned int d = 0x10001000;
 
-    // Créer un masque pour les bits 28 et 12
-    unsigned int mask28 = 1 << 28; // bit 28
-    unsigned int mask12 = 1 << 12; // bit 12
+    unsigned int mask28 = 1 << 28;
+    unsigned int mask12 = 1 << 12;
 
-    // Vérifie si les deux bits sont à 1
     if ((d & mask28) && (d & mask12)) {
         printf("1\n");
     } else {
