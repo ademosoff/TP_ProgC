@@ -64,7 +64,7 @@ int main()
   server_addr.sin_port = htons(PORT);
 
   // 🔁 Modifie cette IP selon ton node1
-  if (inet_pton(AF_INET, "10.0.39.7", &server_addr.sin_addr) <= 0) {
+  if (inet_pton(AF_INET, "10.0.67.4", &server_addr.sin_addr) <= 0) {
     perror("adresse invalide");
     exit(EXIT_FAILURE);
   }
